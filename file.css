@@ -1,132 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
+  background-color: white;
 }
-nav{
-    background-color:#1aa260;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
-    width: 100%;
-    position: fixed;
-    transition: 1s ease;
-    z-index: 1;
+nav {
+  background-color: #1aa261;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  transition: 1s ease;
+  z-index: 1;
 }
-.nav-links{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    margin-left: auto;
-    transition: 1s ease;
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+  transition: 1s ease;
 }
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
-.nav-links a{
-    text-decoration: none;
-     color: white;
-     letter-spacing: 2px;
-     font-weight: 550;
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
 }
-.logo h4{ position: fixed;
-    left:50px;
-    top: 22px;
-    color: white;
-    letter-spacing: 2px;
+.logo h4 {
+  position: fixed;
+  left: 50px;
+  top: 22px;
+  color: white;
+  letter-spacing: 2px;
 }
-section{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navcolorchange {
+  background-color: #2f2e41;
+  transition: 1s ease;
 }
-.Home{
-    /* background-color: #1aa260; */
-    background-image: url("img/homep1.svg");
-    background-repeat: no-repeat;
-    background-size: 50% 100% ;
-    background-position: right 60px top 100px;
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.homecontent{
-    color: #2F2E41;
+.Home {
+  /* background-color: #1aa260; */
+  background-image: url("img/homep1.svg");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: right 60px top 100px;
 }
-.homecontent h2{
+.homecontent {
+  color: #2f2e41;
+}
+.homecontent h2 {
+  position: absolute;
+  top: 158px;
+  left: 70px;
+  font-size: 54px;
+  font-family: "Kaushan Script", cursive;
+}
+.homecontent p {
+  position: absolute;
+  top: 280px;
+  left: 60px;
+  text-align: left;
+  max-width: 40%;
+  font-size: 27px;
+  font-style: italic;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.homecontent a {
+  text-decoration: none;
+  color: #1aa260;
+}
+.About {
+  background-color: #2f2e41;
+}
+
+@media screen and (max-width: 768px) {
+  .line1,
+  .line2,
+  .line3 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  nav {
+    display: block;
+  }
+  .burger {
     position: absolute;
-    top: 108px;
-    left:70px;
-    font-size: 54px;
-    font-family: 'Kaushan Script', cursive;
-}
-.homecontent p{
-    position: absolute;
-    top: 220px;
-    left: 60px;
-    text-align: left;
-    max-width: 40%;
-    font-size: 27px;
-    font-style: italic;
-    font-family: 'Alegreya Sans', sans-serif;
-}
-.homecontent a{
-    text-decoration: none;
-    color: #1aa260;
-}
-.navcolorchange{
-    background-color: #2F2E41;
-    transition: 1s ease;
-}
-@media screen and (max-width:768px) {
-    
-    .line1,.line2,.line3 {
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
-    }
-    nav{
-        display: block;
-    }
-     .burger {
-         position: absolute;
-         right: 8%;
-         top: 24%;
-         cursor: pointer;
-         z-index: 2;
-     }
-     .burger div{
-         transition: all 0.5s ease;
-     }
-    .nav-links {
-        position: fixed;
-        background-color: #1aa260;
-        width: 100%;
-        height:100%;
-        flex-direction: column;
-        /* display: none; */
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -20%);
-        transition: all 0.5s ease-out;
-        pointer-events: none;
-    }
-    .nav-links.open {
+    right: 8%;
+    top: 24%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .burger div {
+    transition: all 0.5s ease;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #1aa260;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    /* display: none; */
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
     clip-path: circle(1100px at 90% -10%);
     -webkit-clip-path: circle(1100px at 90% -10%);
     transition: all 0.5s ease-out;
     pointer-events: all;
-    }
+  }
 
-   .toggle .line1 {  
+  .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
     transition: all 0.5s ease;
   }
@@ -136,27 +144,27 @@ section{
   }
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    transition:  all 0.5s ease;
+    transition: all 0.5s ease;
   }
-  .nav-links li{
-      opacity: 0;
+  .nav-links li {
+    opacity: 0;
   }
-  .nav-links li a{
-      font-size: 25px;
+  .nav-links li a {
+    font-size: 25px;
   }
-  .nav-links li:nth-child(1){
-      transition: all 0.5s ease 0.2s;
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
   }
-  .nav-links li:nth-child(2){
-      transition: all 0.5s ease 0.4s;
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
   }
-  .nav-links li:nth-child(3){
-      transition: all 0.5s ease 0.6s;
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
   }
-  .nav-links li:nth-child(4){
-      transition: all 0.5s ease 0.8s;
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
   }
-  li.fade{
-      opacity: 1;
+  li.fade {
+    opacity: 1;
   }
 }
