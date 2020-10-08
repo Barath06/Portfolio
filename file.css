@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -17,7 +18,8 @@ nav{
     height: 8vh;
     width: 100%;
     position: fixed;
-    transition: 0.7s ease;
+    transition: 1s ease;
+    z-index: 1;
 }
 .nav-links{
     display: flex;
@@ -34,6 +36,8 @@ nav{
 .nav-links a{
     text-decoration: none;
      color: white;
+     letter-spacing: 2px;
+     font-weight: 550;
 }
 .logo h4{ position: fixed;
     left:50px;
@@ -42,16 +46,46 @@ nav{
     letter-spacing: 2px;
 }
 section{
-    height: 92vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.Home{
+    /* background-color: #1aa260; */
+    background-image: url("img/homep1.svg");
+    background-repeat: no-repeat;
+    background-size: 50% 100% ;
+    background-position: right 60px top 100px;
+}
+.homecontent{
+    color: #2F2E41;
+}
+.homecontent h2{
+    position: absolute;
+    top: 108px;
+    left:70px;
+    font-size: 54px;
+    font-family: 'Kaushan Script', cursive;
+}
+.homecontent p{
+    position: absolute;
+    top: 220px;
+    left: 60px;
+    text-align: left;
+    max-width: 40%;
+    font-size: 27px;
+    font-style: italic;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.homecontent a{
+    text-decoration: none;
+    color: #1aa260;
+}
 .navcolorchange{
-    background-color: lightcoral;
+    background-color: #2F2E41;
     transition: 1s ease;
 }
-
 @media screen and (max-width:768px) {
     
     .line1,.line2,.line3 {

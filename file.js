@@ -23,9 +23,9 @@ burger.addEventListener('click', () => {
 
 window.onscroll = function () {
     var top = window.scrollY;
-    if (top >= 50) {
+    if (top >= 70) {
         nav.classList.add("navcolorchange");
-        navlinks.style.backgroundColor="lightcoral"
+        navlinks.style.backgroundColor = "#2F2E41";
     }
     else {
         nav.classList.remove("navcolorchange");
