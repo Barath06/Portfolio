@@ -1,8 +1,10 @@
 const burger = document.querySelector(".burger");
+const burgerdiv=document.querySelectorAll(".burger div")
 const navlinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 const actlink = document.querySelectorAll(".nav-links a");
 const nav = document.querySelector(".navbar");
+const logo =document.querySelector(".logo h4")
 
 burger.addEventListener("click", () => {
   navlinks.classList.toggle("open");
@@ -26,8 +28,10 @@ window.onscroll = function () {
   if (top >= 70) {
     nav.classList.add("navcolorchange");
     navlinks.style.backgroundColor = "#2F2E41";
+    logo.style.color = "white";
   } else {
     nav.classList.remove("navcolorchange");
     navlinks.style.backgroundColor = "#1aa260";
+    logo.style.color = "#white";
   }
 };
