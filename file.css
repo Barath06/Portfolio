@@ -209,7 +209,11 @@ section{
   justify-items: center;
   align-items: center;
 }
- .homecontent h1{
+.Home{
+  position: relative;
+} 
+
+.homecontent h1{
    position: absolute;
    top:7rem;
    font-size:40px;
@@ -219,6 +223,23 @@ section{
    max-width: 80%;
    position: absolute;
    top: 11rem;
+ }
+ 
+ .About{
+   position: relative;
+   background-size: 80%;
+   background-position: right 50% bottom 6%;
+ }
+ .aboutcontent h2{
+   position: absolute;
+   top:40px
+ }
+ .aboutcontent p{
+   position: absolute;
+   top:150px;
+   left: 20px;
+   max-width: 90%;
+   text-align: left;
  }
 
 
