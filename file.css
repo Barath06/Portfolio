@@ -224,8 +224,9 @@ section {
   }
   .Home {
     position: relative;
-    background-position: center center bottom 0px;
-    background-size: 720px;
+    background-size: 300px;
+    background-position: center bottom 10px;
+
   }
 
   .homecontent h1 {
