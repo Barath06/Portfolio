@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -41,54 +41,54 @@ nav {
   letter-spacing: 2px;
   font-weight: 550;
 }
-.nav-links a:hover{
+.nav-links a:hover {
   border: 2px solid white;
   padding-right: 7px;
   padding-left: 7px;
-  padding-top:3px;
+  padding-top: 3px;
   padding-bottom: 3px;
   background-color: white;
   transition: 0.3s ease;
   border-radius: 24px;
   color: #2f2e41;
-  
 }
 .logo h4 {
   position: absolute;
-  left:70px;
+  left: 70px;
   bottom: 10px;
   color: white;
   letter-spacing: 2px;
-  font-size:20px ;
-  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
 }
 .navcolorchange {
   background-color: #2f2e41;
   transition: 1s ease;
 }
 /* remove flexing after completion add it individually  */
-section  {
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.homecontent{
+.homecontent {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #2f2e41;
 }
-.homecontent h1{
+.homecontent h1 {
   position: absolute;
-  bottom:400px;
+  bottom: 400px;
   font-size: 50px;
-
 }
-.homecontent p{
+.homecontent p {
   font-size: 20px;
   position: absolute;
-  bottom: 340px;
+  bottom: 320px;
+  max-width: 50%;
+  text-align: center;
 }
 
 .About {
@@ -97,7 +97,7 @@ section  {
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: right 60px top 100px;
-  background-color:rgb(231, 228, 228);
+  background-color: rgb(231, 228, 228);
 }
 .aboutcontent {
   color: #2f2e41;
@@ -153,13 +153,13 @@ section  {
     height: 100%;
     flex-direction: column;
     /* display: none; */
-    clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 100% -10%);
     -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 0.5s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1800px at 90% -10%);
+    clip-path: circle(1800px at 100% -10%);
     -webkit-clip-path: circle(1800px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: all;
@@ -198,49 +198,47 @@ section  {
   li.fade {
     opacity: 1;
   }
-  
-  .logo h4{
+
+  .logo h4 {
     bottom: 0.79rem;
-    left:2rem;  
+    left: 2rem;
   }
-section{
-  min-height: 100vh;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-.Home{
-  position: relative;
-} 
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .Home {
+    position: relative;
+  }
 
-.homecontent h1{
-   position: absolute;
-   top:7rem;
-   font-size:40px;
- }
- .homecontent p{
-   text-align: center;
-   max-width: 80%;
-   position: absolute;
-   top: 11rem;
- }
- 
- .About{
-   position: relative;
-   background-size: 80%;
-   background-position: right 50% bottom 6%;
- }
- .aboutcontent h2{
-   position: absolute;
-   top:40px
- }
- .aboutcontent p{
-   position: absolute;
-   top:150px;
-   left: 20px;
-   max-width: 90%;
-   text-align: left;
- }
+  .homecontent h1 {
+    position: absolute;
+    top: 7rem;
+    font-size: 40px;
+  }
+  .homecontent p {
+    text-align: center;
+    max-width: 80%;
+    position: absolute;
+    top: 11rem;
+  }
 
-
+  .About {
+    position: relative;
+    background-size: 80%;
+    background-position: right 50% bottom 6%;
+  }
+  .aboutcontent h2 {
+    position: absolute;
+    top: 40px;
+  }
+  .aboutcontent p {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    max-width: 90%;
+    text-align: left;
+  }
 }

@@ -1,10 +1,10 @@
 const burger = document.querySelector(".burger");
-const burgerdiv=document.querySelectorAll(".burger div")
+const burgerdiv = document.querySelectorAll(".burger div");
 const navlinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 const actlink = document.querySelectorAll(".nav-links a");
 const nav = document.querySelector(".navbar");
-const logo =document.querySelector(".logo h4")
+const logo = document.querySelector(".logo h4");
 
 burger.addEventListener("click", () => {
   navlinks.classList.toggle("open");
