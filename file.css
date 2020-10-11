@@ -220,6 +220,13 @@ section{
    position: absolute;
    top: 11rem;
  }
+ .aboutcontent{
+   position: relative;
+ }
+ .aboutcontent p{
+   position: absolute;
+   top: 0px;
+ }
 
 
 }
