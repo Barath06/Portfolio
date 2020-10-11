@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&family=Pacifico&family=Cinzel&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -52,7 +51,7 @@ nav {
   border-radius: 24px;
   color: #2f2e41;
 }
-.logo h4 {
+.logo h4{
   position: absolute;
   left: 70px;
   bottom: 10px;
@@ -61,6 +60,13 @@ nav {
   font-size: 20px;
   font-family: "Pacifico", cursive;
 }
+/* .logo img{
+  position: absolute;
+  left: -30px;
+  bottom: 7px;
+  width: 10%;
+  height: 70%;
+} */
 .navcolorchange {
   background-color: #2f2e41;
   transition: 1s ease;
@@ -72,6 +78,12 @@ section {
   justify-content: center;
   align-items: center;
 }
+.Home{
+  position: relative;
+  background-image: url("img/homeback1.svg");
+  background-repeat: no-repeat;
+  background-position: left 0px bottom 10px ;
+}
 .homecontent {
   display: flex;
   align-items: center;
@@ -82,6 +94,7 @@ section {
   position: absolute;
   bottom: 400px;
   font-size: 50px;
+  font-family: 'Cinzel', serif;
 }
 .homecontent p {
   font-size: 20px;
@@ -92,26 +105,26 @@ section {
 }
 
 .About {
-  /* background-color: #1aa260; */
-  background-image: url("img/homep1.svg");
+  background-image: url("img/aboutp1.svg");
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: right 60px top 100px;
   background-color: rgb(231, 228, 228);
+  position: relative;
 }
 .aboutcontent {
   color: #2f2e41;
 }
 .aboutcontent h2 {
   position: absolute;
-  top: 758px;
+  top: 90px;
   left: 70px;
   font-size: 54px;
   font-family: "Kaushan Script", cursive;
 }
 .aboutcontent p {
   position: absolute;
-  top: 880px;
+  top: 220px;
   left: 60px;
   text-align: left;
   max-width: 40%;
@@ -170,7 +183,6 @@ section {
     transition: all 0.5s ease;
   }
   .toggle .line2 {
-    /* opacity: 0; */
     transform: translateX(400%);
     transition: all 0.5s ease;
   }
@@ -212,6 +224,8 @@ section {
   }
   .Home {
     position: relative;
+    background-position: left 0px bottom 0px;
+    background-size: 720px;
   }
 
   .homecontent h1 {
@@ -228,8 +242,9 @@ section {
 
   .About {
     position: relative;
-    background-size: 80%;
-    background-position: right 50% bottom 6%;
+    background-size: 90%;
+    background-position: right 120% bottom 6%;
+    height: 100vh;
   }
   .aboutcontent h2 {
     position: absolute;
@@ -237,9 +252,10 @@ section {
   }
   .aboutcontent p {
     position: absolute;
-    top: 150px;
+    top: 140px;
     left: 20px;
     max-width: 90%;
     text-align: left;
+    font-size: 23px;
   }
 }
