@@ -114,8 +114,10 @@ section {
   font-size: 15px;
   margin-top: 10px;
   outline: none;
-  position: relative;
-  top: 100px;
+  position: absolute;
+  bottom: 240px;
+  left:auto;
+  right: 46%;
   font-weight: 600;
 }
 .About {
