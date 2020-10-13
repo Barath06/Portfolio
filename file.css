@@ -51,10 +51,10 @@ nav {
   border-radius: 24px;
   color: #2f2e41;
 }
-.logo h4{
-  position: absolute;
+.logo h4 {
+  position: relative;
   left: 70px;
-  bottom: 10px;
+  bottom: 1px;
   color: white;
   letter-spacing: 2px;
   font-size: 20px;
@@ -78,11 +78,11 @@ section {
   justify-content: center;
   align-items: center;
 }
-.Home{
+.Home {
   position: relative;
   background-image: url("img/homeback1.svg");
   background-repeat: no-repeat;
-  background-position: left 0px bottom 10px ;
+  background-position: left 0px bottom 10px;
 }
 .homecontent {
   display: flex;
@@ -94,7 +94,7 @@ section {
   position: absolute;
   bottom: 400px;
   font-size: 50px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 .homecontent p {
   font-size: 20px;
@@ -103,7 +103,21 @@ section {
   max-width: 50%;
   text-align: center;
 }
-
+.homecontent button {
+  padding: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: #1aa260;
+  color: #ffff;
+  font-size: 15px;
+  margin-top: 10px;
+  outline: none;
+  position: relative;
+  top: 100px;
+  font-weight: 600;
+}
 .About {
   background-image: url("img/aboutp1.svg");
   background-repeat: no-repeat;
@@ -213,8 +227,9 @@ section {
   }
 
   .logo h4 {
-    bottom: 0.79rem;
+    top: 12px;
     left: 2rem;
+    position: absolute;
   }
   section {
     min-height: 100vh;
@@ -226,7 +241,6 @@ section {
     position: relative;
     background-size: 300px;
     background-position: center bottom 10px;
-
   }
 
   .homecontent h1 {
@@ -239,6 +253,21 @@ section {
     max-width: 80%;
     position: absolute;
     top: 11rem;
+  }
+  .homecontent button {
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #1aa260;
+    color: #ffff;
+    font-size: 15px;
+    margin-top: 10px;
+    outline: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .About {
