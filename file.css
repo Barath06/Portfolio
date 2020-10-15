@@ -7,12 +7,13 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: sans-serif;
   background-color: white;
 }
 nav {
-  background-color: #1aa261;
+  background-color: #1aa26000;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,47 +31,46 @@ nav {
   height: 100%;
   margin-left: auto;
   transition: 1s ease;
+  overflow-y: hidden;
 }
 .nav-links li {
   list-style: none;
 }
 .nav-links a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: #2f2e41;
   letter-spacing: 2px;
   font-weight: 550;
 }
 .nav-links a:hover {
-  border: 2px solid white;
+  border: 2px solid #1aa260;
   padding-right: 7px;
   padding-left: 7px;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: white;
+  background-color: #1aa260;
   transition: 0.3s ease;
   border-radius: 24px;
-  color: #2f2e41;
+  color: white;
 }
 .logo h4 {
   position: relative;
   left: 70px;
   bottom: 1px;
-  color: white;
+  /* color: white; */
+  color: #2f2e41;
   letter-spacing: 2px;
   font-size: 20px;
   font-family: "Pacifico", cursive;
 }
-/* .logo img{
-  position: absolute;
-  left: -30px;
-  bottom: 7px;
-  width: 10%;
-  height: 70%;
-} */
+
 .navcolorchange {
   background-color: #2f2e41;
+  /* background-color: #1aa260; */
   transition: 1s ease;
 }
+
 /* remove flexing after completion add it individually  */
 section {
   height: 100vh;
@@ -116,7 +116,7 @@ section {
   outline: none;
   position: absolute;
   bottom: 240px;
-  left:auto;
+  left: auto;
   right: 46%;
   font-weight: 600;
 }
@@ -159,8 +159,13 @@ section {
   .line3 {
     width: 30px;
     height: 3px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #2f2e41;
     margin: 5px;
+  }
+
+  .nav-links a {
+    color: white;
   }
   nav {
     display: block;
@@ -193,7 +198,9 @@ section {
     transition: all 1s ease-out;
     pointer-events: all;
   }
-
+  .nav-links-colorchange {
+    background-color: #1aa260;
+  }
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
     transition: all 0.5s ease;
@@ -231,7 +238,11 @@ section {
   .logo h4 {
     top: 12px;
     left: 2rem;
+    color: #2f2e41;
     position: absolute;
+  }
+  .linecolorchange {
+    background-color: white;
   }
   section {
     min-height: 100vh;

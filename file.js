@@ -13,6 +13,7 @@ burger.addEventListener("click", () => {
     link.classList.add("fade");
   });
   actlink.forEach((li) => {
+    li.style.color = "white";
     li.addEventListener("click", () => {
       navlinks.classList.remove("open");
       burger.classList.remove("toggle");
@@ -27,11 +28,23 @@ window.onscroll = function () {
   var top = window.scrollY;
   if (top >= 70) {
     nav.classList.add("navcolorchange");
-    navlinks.style.backgroundColor = "#2F2E41";
+    navlinks.classList.add("nav-links-colorchange");
     logo.style.color = "white";
+    actlink.forEach((link) => {
+      link.style.color = "white";
+    });
+    burgerdiv.forEach((item) => {
+      item.classList.add("linecolorchange");
+    });
   } else {
     nav.classList.remove("navcolorchange");
-    navlinks.style.backgroundColor = "#1aa260";
-    logo.style.color = "#white";
+    navlinks.classList.remove("nav-links-colorchange");
+    logo.style.color = "#2f2e41";
+    burgerdiv.forEach((item) => {
+      item.classList.remove("linecolorchange");
+    });
+    actlink.forEach((link) => {
+      link.style.color = "#2f2e41";
+    });
   }
 };
