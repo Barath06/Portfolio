@@ -154,32 +154,16 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .line1,
-  .line2,
-  .line3 {
-    width: 30px;
-    height: 3px;
-    /* background-color: white; */
-    background-color: #2f2e41;
-    margin: 5px;
-  }
-
-  .nav-links a {
-    color: white;
-  }
   nav {
     display: block;
   }
-  .burger {
+  .logo h4 {
+    top: 12px;
+    left: 2rem;
+    color: #2f2e41;
     position: absolute;
-    right: 8%;
-    top: 24%;
-    cursor: pointer;
-    z-index: 2;
   }
-  .burger div {
-    transition: all 0.5s ease;
-  }
+
   .nav-links {
     position: fixed;
     background-color: #1aa260;
@@ -192,6 +176,42 @@ section {
     transition: all 0.5s ease-out;
     pointer-events: none;
   }
+  .nav-links a {
+    color: white;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li a {
+    font-size: 25px;
+  }
+
+  .burger {
+    position: absolute;
+    right: 8%;
+    top: 24%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .burger div {
+    transition: all 0.5s ease;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 30px;
+    height: 3px;
+    /* background-color: white; */
+    background-color: #2f2e41;
+    margin: 5px;
+  }
+  .linecolorchange {
+    background-color: white;
+  }
+
   .nav-links.open {
     clip-path: circle(1800px at 100% -10%);
     -webkit-clip-path: circle(1800px at 90% -10%);
@@ -213,12 +233,7 @@ section {
     transform: rotate(45deg) translate(-5px, -6px);
     transition: all 0.5s ease;
   }
-  .nav-links li {
-    opacity: 0;
-  }
-  .nav-links li a {
-    font-size: 25px;
-  }
+
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
   }
@@ -235,15 +250,6 @@ section {
     opacity: 1;
   }
 
-  .logo h4 {
-    top: 12px;
-    left: 2rem;
-    color: #2f2e41;
-    position: absolute;
-  }
-  .linecolorchange {
-    background-color: white;
-  }
   section {
     min-height: 100vh;
     display: flex;
