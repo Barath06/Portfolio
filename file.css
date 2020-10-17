@@ -213,9 +213,9 @@ section {
   }
 
   .nav-links.open {
-    clip-path: circle(1800px at 100% -10%);
-    -webkit-clip-path: circle(1800px at 90% -10%);
-    transition: all 1s ease-out;
+    clip-path: circle(1700px at 70% -30%);
+    -webkit-clip-path: circle(1700px at 70% -30%);
+    transition: 2s ease-out;
     pointer-events: all;
   }
   .nav-links-colorchange {
