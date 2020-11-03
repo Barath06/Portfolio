@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="signup.js"></script>
+  </head>
+  <body>
+    <img src="img/grl.svg" alt="img" />
+    <center>
+      <h1>Sign Up</h1>
+      <h4>A portfolio website of mine try signing Up</h4>
+      <form autocomplete="off" onsubmit=" return verify()" action="login.html">
+        <div class="ip-fields">
+          <input class="mail" type="email" id="mail" required />
+          <label class="mai" for="mail">Mail</label>
+          <input class="una" type="text" id="uname" required />
+          <label class="un" for="uname">Username</label>
+          <input class="pwds" type="password" id="pwd" required />
+          <label class="pwd" for="pwd">Password</label>
+          <input class="cpwds" type="password" id="cpwd" required />
+          <label class="cpwd" for="cpwd">Confirm Password</label>
+          <button type="submit">Sign Up</button>
+          <button type="reset">Clear All</button>
+        </div>
+      </form>
+      <div class="presentuser">
+      <h4>Already a member? then</h4>
+      <a href="login.html">Login</a>
+      </div> 
+    </center>
+  </body>
+</html>

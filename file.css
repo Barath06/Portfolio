@@ -38,21 +38,17 @@ nav {
 }
 .nav-links a {
   text-decoration: none;
-  /* color: white; */
   color: #2f2e41;
   letter-spacing: 2px;
   font-weight: 550;
 }
 .nav-links a:hover {
   border: 2px solid #1aa260;
-  padding-right: 7px;
-  padding-left: 7px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 7px;
   background-color: #1aa260;
+  color: #ffff;
   transition: 0.3s ease;
   border-radius: 24px;
-  color: white;
 }
 .logo h4 {
   position: relative;
@@ -104,13 +100,12 @@ section {
   text-align: center;
 }
 .homecontent button {
-  padding: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
-  background-color: #1aa260;
-  color: #ffff;
+  /* background-color: #1aa260; */
+  /* color: #ffff; */
+  color: #2f2e41;
   font-size: 15px;
   margin-top: 10px;
   outline: none;
@@ -119,13 +114,14 @@ section {
   left: auto;
   right: 46%;
   font-weight: 600;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
 .About {
   background-image: url("img/aboutp1.svg");
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: right 60px top 100px;
-  background-color: rgb(231, 228, 228);
+  /* background-color: rgb(231, 228, 228); */
   position: relative;
 }
 .aboutcontent {
@@ -279,8 +275,6 @@ section {
     padding-right: 20px;
     border-radius: 30px;
     border-style: none;
-    background-color: #1aa260;
-    color: #ffff;
     font-size: 15px;
     margin-top: 10px;
     outline: none;

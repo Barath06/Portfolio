@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+.ip-fields {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+h1,h4{
+  margin: 25px;
+  color: rgb(29, 58, 82);
+  font-weight: lighter;
+}
+form {
+  margin: 25px;
+}
+input {
+  display: flex;
+  padding: 14px;
+  width: 100%;
+  align-content: left;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #3b3b5ae8;
+  padding-left: 0;
+  color: #111;
+  padding-bottom: 6px;
+}
+label {
+  position: absolute;
+  left: -78px;
+  top: -36px;
+  cursor: text;
+  color: #3b3b5ae8;
+  transition: 0.2s all;
+}
+.mai {
+  position: relative;
+  left: -110px;
+}
+.un {
+  position: relative;
+  left: -90px;
+}
+.pwd {
+  position: relative;
+  left: -90px;
+}
+.cpwd {
+  position: relative;
+  left: -60px;
+}
+input:focus {
+  border-color: blue;
+}
+.mail:focus ~ .mai,
+.mail:valid ~ .mai {
+  font-size: 14px;
+  color: blue;
+  top: -62px;
+}
+.una:focus ~ .un,
+.una:valid ~ .un {
+  font-size: 14px;
+  color: blue;
+  top: -60px;
+}
+.pwds:focus ~ .pwd,
+.pwds:valid ~ .pwd {
+  font-size: 14px;
+  color: blue;
+  top: -55px;
+}
+.cpwds:focus ~ .cpwd,
+.cpwds:valid ~ .cpwd {
+  font-size: 14px;
+  color: blue;
+  top: -55px;
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgb(26, 115, 232);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  width: 160px;
+  position: relative;
+  top: -20px;
+}
+button:hover {
+  background-color: rgba(27, 123, 219, 0.877);
+}
+img {
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.presentuser{
+position: relative;
+top:360px;
+}
+a{
+  color:blue;
+  text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+  img {
+    position: relative;
+    left: 0px;
+    bottom: -600px;
+    height: 60%;
+    width: 60%;
+    /* display: none; */
+  }
+  body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  a{
+    position: relative;
+    top:-270px;
+  }
+  h1{
+    position: relative;
+    top: -230px;
+  }
+  h4{
+    position: relative;
+    top:-250px;
+  }
+  form {
+    position: relative;
+    bottom: 240px;
+  }
+}
