@@ -18,7 +18,8 @@ form {
 }
 .logh1 {
   margin: 20px;
-  font-weight: lighter;
+  font-weight: bold;
+  font-family: "Cinzel";
   color: rgb(29, 58, 82);
 }
 .ip-fields {
@@ -181,8 +182,9 @@ section {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
-  color: #2f2e41;
-  font-size: 15px;
+  color: white;
+  background-color: #1aa260;
+ font-size: 15px;
   margin-top: 10px;
   outline: none;
   position: absolute;
