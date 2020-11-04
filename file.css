@@ -12,6 +12,88 @@ body {
   font-family: sans-serif;
   background-color: white;
 }
+/* login styes */
+form {
+  margin: 60px;
+}
+.logh1 {
+  margin: 20px;
+  font-weight: lighter;
+  color: rgb(29, 58, 82);
+}
+.ip-fields {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+label.un {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100px;
+  color: #3b3b5ae8;
+  transition: 0.2s all;
+  cursor: text;
+}
+label.pwd {
+  position: absolute;
+  top: 86px;
+  left: -88px;
+  width: 100%;
+  color: #3b3b5ae8;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #3b3b5ae8;
+  box-shadow: none;
+  color: #111;
+  padding-bottom: 7px;
+}
+input:focus {
+  border-color: blue;
+}
+.una:focus ~ .un,
+.una:valid ~ .un {
+  font-size: 14px;
+  top: -24px;
+  color: blue;
+}
+.pwds:focus ~ .pwd,
+.pwds:valid ~ .pwd {
+  font-size: 14px;
+  top: 66px;
+  color: blue;
+}
+.logbtn {
+  padding: 10px;
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgb(26, 115, 232);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.logbtn:hover {
+  background-color: rgba(27, 123, 219, 0.877);
+}
+.logimg {
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* over */
 nav {
   background-color: #1aa26000;
   display: flex;
@@ -54,19 +136,15 @@ nav {
   position: relative;
   left: 70px;
   bottom: 1px;
-  /* color: white; */
   color: #2f2e41;
   letter-spacing: 2px;
   font-size: 20px;
   font-family: "Pacifico", cursive;
 }
-
 .navcolorchange {
   background-color: #2f2e41;
-  /* background-color: #1aa260; */
   transition: 1s ease;
 }
-
 /* remove flexing after completion add it individually  */
 section {
   height: 100vh;
@@ -103,8 +181,6 @@ section {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
-  /* background-color: #1aa260; */
-  /* color: #ffff; */
   color: #2f2e41;
   font-size: 15px;
   margin-top: 10px;
@@ -114,7 +190,7 @@ section {
   left: auto;
   right: 46%;
   font-weight: 600;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .About {
   background-image: url("img/aboutp1.svg");
@@ -148,8 +224,24 @@ section {
   text-decoration: none;
   color: #1aa260;
 }
-
 @media screen and (max-width: 768px) {
+  /* login style */
+  .logimg {
+    position: relative;
+    left: 80px;
+    top: 500px;
+    height: 10%;
+    width: 60%;
+  }
+  .logh1 {
+    position: relative;
+    bottom: 110px;
+  }
+  form {
+    position: relative;
+    bottom: 70px;
+  }
+  /* over */
   nav {
     display: block;
   }
@@ -159,14 +251,12 @@ section {
     color: #2f2e41;
     position: absolute;
   }
-
   .nav-links {
     position: fixed;
     background-color: #1aa260;
     width: 100%;
     height: 100%;
     flex-direction: column;
-    /* display: none; */
     clip-path: circle(100px at 100% -10%);
     -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 0.5s ease-out;
@@ -175,7 +265,6 @@ section {
   .nav-links a {
     color: white;
   }
-
   .nav-links li {
     opacity: 0;
   }
@@ -183,7 +272,6 @@ section {
   .nav-links li a {
     font-size: 25px;
   }
-
   .burger {
     position: absolute;
     right: 8%;
@@ -194,20 +282,17 @@ section {
   .burger div {
     transition: all 0.5s ease;
   }
-
   .line1,
   .line2,
   .line3 {
     width: 30px;
     height: 3px;
-    /* background-color: white; */
     background-color: #2f2e41;
     margin: 5px;
   }
   .linecolorchange {
     background-color: white;
   }
-
   .nav-links.open {
     clip-path: circle(1700px at 70% -30%);
     -webkit-clip-path: circle(1700px at 70% -30%);
@@ -229,7 +314,6 @@ section {
     transform: rotate(45deg) translate(-5px, -6px);
     transition: all 0.5s ease;
   }
-
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
   }
@@ -245,7 +329,6 @@ section {
   li.fade {
     opacity: 1;
   }
-
   section {
     min-height: 100vh;
     display: flex;
@@ -257,7 +340,6 @@ section {
     background-size: 300px;
     background-position: center bottom 10px;
   }
-
   .homecontent h1 {
     position: absolute;
     top: 7rem;
@@ -270,19 +352,10 @@ section {
     top: 11rem;
   }
   .homecontent button {
-    padding: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 30px;
-    border-style: none;
-    font-size: 15px;
-    margin-top: 10px;
-    outline: none;
     position: relative;
     top: 0px;
     left: 0px;
   }
-
   .About {
     position: relative;
     background-size: 90%;
