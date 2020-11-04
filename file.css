@@ -171,6 +171,16 @@ section {
   font-size: 50px;
   font-family: "Cinzel", serif;
 }
+  @keyframes move{
+    from{opacity:0;
+    transform :translateY(200px);  
+    }
+    to{
+      opacity: 1;
+      transform :translateY(0px); 
+    }
+  }
+
 .homecontent p {
   font-size: 20px;
   position: absolute;

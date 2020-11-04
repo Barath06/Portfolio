@@ -5,6 +5,15 @@ const links = document.querySelectorAll(".nav-links li");
 const actlink = document.querySelectorAll(".nav-links a");
 const nav = document.querySelector(".navbar");
 const logo = document.querySelector(".logo h4");
+const heading = document.querySelector(".homecontent h1");
+const para = document.querySelector(".homecontent p");
+const cbtn=document.querySelector(".homecontent button")
+window.addEventListener("load", () => {
+  heading.style.animation = "move 1s ease"
+  para.style.animation = "move 1.5s ease"
+  cbtn.style.animation = "move 1.8s ease"
+
+});
 
 burger.addEventListener("click", () => {
   navlinks.classList.toggle("open");
