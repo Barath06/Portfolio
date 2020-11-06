@@ -121,7 +121,8 @@ nav {
 }
 .nav-links a {
   text-decoration: none;
-  color: #2f2e41;
+  /* color: #2f2e41; */
+  color: white;
   letter-spacing: 2px;
   font-weight: 550;
 }
@@ -137,7 +138,7 @@ nav {
   position: relative;
   left: 70px;
   bottom: 1px;
-  color: #2f2e41;
+  color: white;
   letter-spacing: 2px;
   font-size: 20px;
   font-family: "Pacifico", cursive;
@@ -155,15 +156,20 @@ section {
 }
 .Home {
   position: relative;
-  background-image: url("img/homeback1.svg");
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.288),
+      rgba(27, 27, 27, 0.425)
+    ),
+    url("img/Homeback.jpeg");
   background-repeat: no-repeat;
-  background-position: left 0px bottom 10px;
+  background-size: cover;
 }
 .homecontent {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2f2e41;
+  color: white;
 }
 .homecontent h1 {
   position: absolute;
@@ -171,15 +177,16 @@ section {
   font-size: 50px;
   font-family: "Cinzel", serif;
 }
-  @keyframes move{
-    from{opacity:0;
-    transform :translateY(200px);  
-    }
-    to{
-      opacity: 1;
-      transform :translateY(0px); 
-    }
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(500px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 .homecontent p {
   font-size: 20px;
@@ -260,7 +267,6 @@ section {
   .logo h4 {
     top: 12px;
     left: 2rem;
-    color: #2f2e41;
     position: absolute;
   }
   .nav-links {
@@ -299,20 +305,14 @@ section {
   .line3 {
     width: 30px;
     height: 3px;
-    background-color: #2f2e41;
-    margin: 5px;
-  }
-  .linecolorchange {
     background-color: white;
+    margin: 5px;
   }
   .nav-links.open {
     clip-path: circle(1700px at 70% -30%);
     -webkit-clip-path: circle(1700px at 70% -30%);
     transition: 2s ease-out;
     pointer-events: all;
-  }
-  .nav-links-colorchange {
-    background-color: #1aa260;
   }
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -348,9 +348,15 @@ section {
     align-items: center;
   }
   .Home {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.288),
+        rgba(27, 27, 27, 0.425)
+      ),
+      url("img/Homeback.jpeg");
     position: relative;
-    background-size: 300px;
-    background-position: center bottom 10px;
+    background-size: cover;
+    background-position: center;
   }
   .homecontent h1 {
     position: absolute;
