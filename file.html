@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="file.css" />
   </head>
   <body>
@@ -13,34 +14,34 @@
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <div class="logo">
+      <div class ="logo">
         <h4>Portfolio</h4>
       </div>
-      <ul class="nav-links">
-        <li><a id="homelink" data-page="Home" href="#Home">Home</a></li>
-        <li><a id="abtlink" data-page="About" href="#About">About</a></li>
-        <li>
-          <a id="prjlink" data-page="Projects" href="#Projects">Projects</a>
-        </li>
-        <li>
-          <a id="cotactlink" data-page="Contact" href="#Contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <ul class ="nav-links">
+  <li><a class="coollink"  id="homelink" data-page="Home" href="#Home">Home</a></li>
+  <li><a class="coollink" id="abtlink" data-page="About" href="#About">About</a></li>
+  <li><a class="coollink" id="prjlink" data-page="Projects" href="#Projects">Projects</a></li>
+  <li><a class="coollink" id="contactlink" data-page="Contact" href="#Contact">Contact</a></li>
+  </ul>
+  </nav>
     <section id="Home" class="Home">
       <div class="homecontent">
-        <h1>My Portfolio</h1>
-        <p>
+        <h1 data-aos="zoom-in-up" data-aos-duration="1000">My Portfolio</h1>
+        <p data-aos="fade-up" data-aos-duration="1500">
           " I am Gokul, I design clean and materialistic websites with
           responsive design that has smooth animations and stock transitions "
         </p>
-        <a href="tel:+916381315837"><button class="phn">Call now</button> </a>
+        <a href="tel:+916381315837"
+          ><button data-aos="fade-up" data-aos-duration="1900" class="phn">
+            Call now
+          </button>
+        </a>
       </div>
     </section>
     <section id="About" class="About">
       <div class="aboutcontent">
-        <h2>Hey there !</h2>
-        <p>
+        <h2 data-aos="fade-up" data-aos-duration="1300">Hey there !</h2>
+        <p data-aos="fade-up" data-aos-duration="1700">
           I am a Computer Science student and I create websites,This is one of
           my websites in my portfolio and if you like this design just let me
           know, you can ping me in instagram
@@ -51,11 +52,15 @@
       </div>
     </section>
     <section id="Projects" class="Projects">
-      <h1>projects</h1>
+      <h1 data-aos="zoom-in-up" data-aos-duration="1300">projects</h1>
     </section>
     <section id="Contact" class="Contact">
-      <h1>Contact Us</h1>
+      <h1 data-aos="zoom-in-up" data-aos-duration="1300">Contact Us</h1>
     </section>
     <script src="file.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
