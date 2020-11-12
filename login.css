@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+/* login styes */
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 60px;
+}
+.logh1 {
+  margin: 20px;
+  font-weight: bold;
+  font-family: "Cinzel";
+  color: rgb(29, 58, 82);
+}
+.ip-fields {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+label.un {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100px;
+  color: #3b3b5ae8;
+  transition: 0.2s all;
+  cursor: text;
+}
+label.pwd {
+  position: absolute;
+  top: 86px;
+  left: -88px;
+  width: 100%;
+  color: #3b3b5ae8;
+  transition: 0.2s all;
+  cursor: text;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #3b3b5ae8;
+  box-shadow: none;
+  color: #111;
+  padding-bottom: 7px;
+}
+input:focus {
+  border-color: blue;
+}
+.una:focus ~ .un,
+.una:valid ~ .un {
+  font-size: 14px;
+  top: -24px;
+  color: blue;
+}
+.pwds:focus ~ .pwd,
+.pwds:valid ~ .pwd {
+  font-size: 14px;
+  top: 66px;
+  color: blue;
+}
+.logbtn {
+  padding: 10px;
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgb(26, 115, 232);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.logbtn:hover {
+  background-color: rgba(27, 123, 219, 0.877);
+}
+.logimg {
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* over */
+
+@media screen and (max-width: 768px) {
+  /* login style */
+  .logimg {
+    position: relative;
+    left: 80px;
+    top: 500px;
+    height: 10%;
+    width: 60%;
+  }
+  .logh1 {
+    position: relative;
+    bottom: 110px;
+  }
+  form {
+    position: relative;
+    bottom: 70px;
+  }
+  /* over */
+}
