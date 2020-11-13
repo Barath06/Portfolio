@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kaushan+Script&family=Pacifico&family=Cinzel&display=swap");
+
+$aos-distance: 200px;
+@import "node_modules/aos/src/sass/aos.scss";
 * {
   padding: 0px;
   margin: 0px;
@@ -11,6 +14,7 @@ html {
 body {
   font-family: sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 nav {
   background-color: #1aa26000;
@@ -36,18 +40,16 @@ nav {
 .nav-links li {
   list-style: none;
 }
-.nav-links a {
+.nav-links li a {
+  display: inline-block;
   text-decoration: none;
-  /* color: #2f2e41; */
   color: white;
+  /* color: #2f2e41; */
   letter-spacing: 2px;
   font-weight: 550;
 }
-.nav-links li a {
-  display: inline-block;
-}
-.coollink::after{
-  content: '';
+.coollink::after {
+  content: "";
   display: block;
   width: 0;
   height: 2.3px;
@@ -118,33 +120,30 @@ section {
   font-weight: 600;
   margin-top: 30px;
 }
-.homecontent button:hover{
-  color:#1aa260;
+.homecontent button:hover {
+  color: #1aa260;
   background: white;
   transition: all 0.4s ease;
 }
 .About {
-  background-image: url("img/aboutp1.svg");
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: right 60px top 100px;
-  /* background-color: rgb(231, 228, 228); */
+  // background-color: rgb(231, 228, 228); 
   position: relative;
 }
 .aboutcontent {
   color: #2f2e41;
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  // background-color: yellow;
 }
 .aboutcontent h2 {
   font-size: 54px;
   font-family: "Kaushan Script", cursive;
+  margin: -20% 0 0 30px;
 }
 .aboutcontent p {
-  margin-top: 50px;
+  margin:20px 0 0 30px;
   text-align: left;
-  max-width: 40%;
+  max-width: 90%;
   font-size: 27px;
   font-style: italic;
   font-family: "Alegreya Sans", sans-serif;
@@ -153,7 +152,14 @@ section {
   text-decoration: none;
   color: #1aa260;
 }
+.About img{
+  height:500px;
+  width: 600px;
+  margin-right: 100px;
+  // background-color: yellowgreen;
+}
 @media screen and (max-width: 768px) {
+  
   nav {
     display: block;
   }
@@ -260,12 +266,21 @@ section {
     font-size: 16px;
   }
   .About {
-    background-size: 90%;
-    background-position: right 120% bottom 6%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .About img{
+    // display: none;
+    margin-left: 80px;
+    height:300px;
+    // background-color: green;
+    width: 300px;
+    position: absolute;
+    bottom:30px;
   }
   .aboutcontent h2 {
-    margin-top: -90%;
+    margin-top: -70%;
   }
   .aboutcontent {
     display: flex;
@@ -275,6 +290,6 @@ section {
     max-width: 90%;
     text-align: left;
     font-size: 23px;
-    margin-top: 10%;
+    margin-top: 7%;
   }
 }

@@ -4,27 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="file.css" />
   </head>
-  <body>
+  <body data-scroll-container>
     <nav class="navbar">
       <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <div class ="logo">
+      <div class="logo">
         <h4>Portfolio</h4>
       </div>
-  <ul class ="nav-links">
-  <li><a class="coollink"  id="homelink" data-page="Home" href="#Home">Home</a></li>
-  <li><a class="coollink" id="abtlink" data-page="About" href="#About">About</a></li>
-  <li><a class="coollink" id="prjlink" data-page="Projects" href="#Projects">Projects</a></li>
-  <li><a class="coollink" id="contactlink" data-page="Contact" href="#Contact">Contact</a></li>
-  </ul>
-  </nav>
-    <section id="Home" class="Home">
+      <ul class="nav-links">
+        <li>
+          <a class="coollink" id="homelink" data-page="Home" href="#Home"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class="coollink" id="abtlink" data-page="About" href="#About"
+            >About</a
+          >
+        </li>
+        <li>
+          <a class="coollink" id="prjlink" data-page="Projects" href="#Projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            class="coollink"
+            id="contactlink"
+            data-page="Contact"
+            href="#Contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section data-scroll-section id="Home" class="Home">
       <div class="homecontent">
         <h1 data-aos="zoom-in-up" data-aos-duration="1000">My Portfolio</h1>
         <p data-aos="fade-up" data-aos-duration="1500">
@@ -38,7 +59,7 @@
         </a>
       </div>
     </section>
-    <section id="About" class="About">
+    <section data-scroll-section id="About" class="About">
       <div class="aboutcontent">
         <h2 data-aos="fade-up" data-aos-duration="1300">Hey there !</h2>
         <p data-aos="fade-up" data-aos-duration="1700">
@@ -50,11 +71,12 @@
           website for your startup or business I can design that too
         </p>
       </div>
+      <img id = "abtimg" data-aos="zoom-in-up" data-aos-duration="1700" src="img/aboutp1.svg" />
     </section>
-    <section id="Projects" class="Projects">
+    <section data-scroll-section id="Projects" class="Projects">
       <h1 data-aos="zoom-in-up" data-aos-duration="1300">projects</h1>
     </section>
-    <section id="Contact" class="Contact">
+    <section data-scroll-section id="Contact" class="Contact">
       <h1 data-aos="zoom-in-up" data-aos-duration="1300">Contact Us</h1>
     </section>
     <script src="file.js"></script>
