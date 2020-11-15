@@ -48,11 +48,12 @@ nav {
   letter-spacing: 2px;
   font-weight: 550;
 }
+
 .coollink::after {
   content: "";
   display: block;
   width: 0;
-  height: 2.3px;
+  height: 2px;
   /* background: #1aa260; */
   background: white;
   transition: width 0.4s;
@@ -68,6 +69,9 @@ nav {
   letter-spacing: 2px;
   font-size: 20px;
   font-family: "Pacifico", cursive;
+}
+.logo a{
+  text-decoration: none;
 }
 .navcolorchange {
   background-color: #2f2e41;
@@ -126,7 +130,7 @@ section {
   transition: all 0.4s ease;
 }
 .About {
-  // background-color: rgb(231, 228, 228); 
+  // background-color: rgb(231, 228, 228);
   position: relative;
 }
 .aboutcontent {
@@ -141,7 +145,7 @@ section {
   margin: -20% 0 0 30px;
 }
 .aboutcontent p {
-  margin:20px 0 0 30px;
+  margin: 20px 0 0 30px;
   text-align: left;
   max-width: 90%;
   font-size: 27px;
@@ -152,20 +156,56 @@ section {
   text-decoration: none;
   color: #1aa260;
 }
-.About img{
-  height:500px;
+.About img {
+  height: 500px;
   width: 600px;
   margin-right: 100px;
   // background-color: yellowgreen;
 }
+.Projects {
+  background-color: indigo;
+
+  h1{
+    color: white;
+  }
+}
+.Contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a{
+    text-decoration: none;
+  }
+}
+.logos{
+  height: 70px;
+  width: 70px;
+}
+.labels{
+  margin-top: 20px;
+}
+//combine all cs
+.c1 {
+  background-color: rgb(243, 241, 241);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 250px;
+  border-radius: 20px;
+  color: #2f2e41;
+}
+
 @media screen and (max-width: 768px) {
-  
   nav {
     display: block;
   }
   .logo h4 {
     position: absolute;
     margin-top: 14px;
+    margin-right: 30px;
   }
   .nav-links {
     position: fixed;
@@ -194,6 +234,7 @@ section {
     top: 24%;
     cursor: pointer;
     z-index: 2;
+    margin-left: 50px;
   }
   .burger div {
     transition: all 0.5s ease;
@@ -270,14 +311,13 @@ section {
     display: flex;
     flex-direction: column;
   }
-  .About img{
-    // display: none;
+  .About img {
     margin-left: 80px;
-    height:300px;
+    height: 300px;
     // background-color: green;
     width: 300px;
     position: absolute;
-    bottom:30px;
+    bottom: 30px;
   }
   .aboutcontent h2 {
     margin-top: -70%;
@@ -291,5 +331,26 @@ section {
     text-align: left;
     font-size: 23px;
     margin-top: 7%;
+    margin-left: 15px;
+  }
+  .Contact{
+    // align-items: center;
+   flex-direction: row;
+   flex-wrap:wrap;
+   justify-content:space-around;
+   width: 100%;
+   background-color: white;
+  }
+  .c1{
+    margin-top: 30px;
+    width: 200px;
+    height: 250px;
+  }
+  .logos{
+    height: 70px;
+    width: 70px;
+  }
+  .labels{
+    margin-top: 20px;
   }
 }

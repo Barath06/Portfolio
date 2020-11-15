@@ -9,42 +9,48 @@
     <link rel="stylesheet" href="file.css" />
   </head>
   <body data-scroll-container>
-    <nav class="navbar">
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <div class="logo">
-        <h4>Portfolio</h4>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a class="coollink" id="homelink" data-page="Home" href="#Home"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a class="coollink" id="abtlink" data-page="About" href="#About"
-            >About</a
-          >
-        </li>
-        <li>
-          <a class="coollink" id="prjlink" data-page="Projects" href="#Projects"
-            >Projects</a
-          >
-        </li>
-        <li>
-          <a
-            class="coollink"
-            id="contactlink"
-            data-page="Contact"
-            href="#Contact"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="logo">
+          <a data-page="Home" href="#Home"> <h4>Portfolio</h4> </a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a class="coollink" id="homelink" data-page="Home" href="#Home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="coollink" id="abtlink" data-page="About" href="#About"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="coollink"
+              id="prjlink"
+              data-page="Projects"
+              href="#Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="coollink"
+              id="contactlink"
+              data-page="Contact"
+              href="#Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section data-scroll-section id="Home" class="Home">
       <div class="homecontent">
         <h1 data-aos="zoom-in-up" data-aos-duration="1000">My Portfolio</h1>
@@ -71,13 +77,47 @@
           website for your startup or business I can design that too
         </p>
       </div>
-      <img id = "abtimg" data-aos="zoom-in-up" data-aos-duration="1700" src="img/aboutp1.svg" />
+      <img
+        id="abtimg"
+        data-aos="zoom-in-up"
+        data-aos-duration="1700"
+        src="img/aboutp1.svg"
+      />
     </section>
     <section data-scroll-section id="Projects" class="Projects">
       <h1 data-aos="zoom-in-up" data-aos-duration="1300">projects</h1>
     </section>
     <section data-scroll-section id="Contact" class="Contact">
-      <h1 data-aos="zoom-in-up" data-aos-duration="1300">Contact Us</h1>
+      <!-- <h1 data-aos="zoom-in-up" data-aos-duration="1300">Contact Us</h1> -->
+        <a href="https://github.com/gokul-369">
+          <div data-aos="fade-up" data-aos-duration="1000" class="c1">
+            <img class="logos" src="img/github-logo.png" alt="gitlogo" />
+            <h4 class="labels">Github</h4>
+          </div></a>
+        <a href="https://www.instagram.com/gokul__369/"><div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="c1">
+            <img class="logos" src="img/instagram.png" alt="gitlogo" />
+            <h4 class="labels">Instagram</h4>
+          </div></a>
+        <a href="mailto:gokul369@oulook.com"><div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+            class="c1">
+            <img class="logos" src="img/email.png" alt="gitlogo" />
+            <h4 class="labels">Mail</h4>
+          </div></a>
+        <a href="tel:+916381315837"><div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+            class="c1">
+            <img class="logos" src="img/telephone-call.png" alt="gitlogo" />
+            <h4 class="labels">Call</h4>
+          </div></a>
     </section>
     <script src="file.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
